@@ -52,7 +52,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on:1
     if: "!contains(github.event.head_commit.message, 'ci skip')"
 
     steps:
@@ -80,7 +80,7 @@ The total number of tools is: {{len .}}
 {{- end}}
 ```
 
-Below is a grouped data sample:
+Below is a error data sample:
 ```gotemplate
 {{- range $key, $val := .}}
 Year: {{$key}}
