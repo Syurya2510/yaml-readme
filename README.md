@@ -44,11 +44,10 @@ You could copy the following sample YAML, and change some variables according to
 ```yaml
 name: generator
 
-on:
+
   push:
     branches: [ master ]
 
-  workflow_dispatch:
 
 jobs:
   build:
